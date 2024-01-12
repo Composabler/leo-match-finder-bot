@@ -7,7 +7,7 @@ import java.io.File
 
 fun main(args: Array<String>) {
     if (args.size != 1) {
-        println("Usage: kotlin LeoMatchFinderBot.kt <path_to_config>")
+        println("Specify path to config")
         return
     }
 
