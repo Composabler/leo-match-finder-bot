@@ -2,8 +2,9 @@ package config
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
-data class ApiConfig(
-    @JsonProperty("api_token") val apiToken: ApiTokenConfig,
-    @JsonProperty("session_path") val sessionPath: String,
-    @JsonProperty("phone_number") val phoneNumber: String,
+data class AppConfig(
+    @JsonProperty("auth") val auth: AuthConfig,
+    @JsonProperty("session") val session: SessionConfig,
+    @JsonProperty("leo_match_bot_id") val leoMatchBotId: Long,
+    @JsonProperty("match_words") val matchWords: Set<String>,
 )
